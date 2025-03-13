@@ -1,0 +1,156 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    padding: 0.5rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #444;
+    color: #fff;
+    width: 40px;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    transition: width 0.3s;
+    font-weight: bold;
+    content-visibility: hidden;
+}
+
+nav:hover {
+    width: 200px;
+    content-visibility: visible;
+    background-color: cadetblue;
+    /* Expanded width on hover */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    padding: 1em;
+    text-align: center;
+    display: block;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li a:hover {
+    color: #444;
+
+}
+
+/* Main content styles */
+main {
+    padding: 2rem;
+    background-color: #fff;
+    margin: 1rem auto;
+    margin-left: 60px;
+    transition: margin-left 0.3s;
+}
+
+nav:hover+main {
+    margin-left: 200px;
+    /* Adjust margin when nav is expanded */
+}
+
+main h2 {
+    color: cadetblue;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+main p,
+main ul {
+    margin: 1rem 0;
+}
+
+main ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+aside {
+    float: right;
+    width: 300px;
+    margin: 1rem;
+}
+
+aside img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Contact form styles */
+#contact-form {
+    margin-top: 2rem;
+}
+
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    margin-top: 1rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#contact-form textarea {
+    resize: vertical;
+}
+
+#contact-form button {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #555;
+}
+
+
+/* Footer styles */
+footer {
+    color: #555555;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
